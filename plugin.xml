@@ -30,7 +30,7 @@
         
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <receiver android:name="org.jk.cordova.wakeupplugin.WakeupReceiver" />
-            <receiver android:name="org.jk.cordova.wakeupplugin.WakeupBootReceiver">  
+            <receiver android:name="org.jk.cordova.wakeupplugin.WakeupBootReceiver" android:exported="true">  
               <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
               </intent-filter>
